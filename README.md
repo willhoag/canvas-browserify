@@ -2,30 +2,33 @@
 
 wrap canvas so you can load it the same in node or the client!
 
+## Note
+
+this is a fork of [dominictarr/canvas-browserify](git://github.com/dominictarr/canvas-browserify.git) which makes the api a function call instead of a class instantiation, getting rid of the return override of the constructor which fails in phantomjs and maybe elsewhere
+
 ## Example
 
 draw a green circle in both the browser or node.
 
 ``` js
 //example.js
-var Canvas = require('./')
+var createCanvas = require('./')
 
 var dia = 200
-var canvas = new Canvas(dia, dia)
+var canvas = createCanvas(dia, dia)
 var ctx = canvas.getContext('2d')
 
-var context = canvas.getContext('2d');
 var centerX = canvas.width / 2;
 var centerY = canvas.height / 2;
 var radius = (dia - 5)/2;
 
-context.beginPath();
-context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
-context.fillStyle = 'green';
-context.fill();
-context.lineWidth = 5;
-context.strokeStyle = '#003300';
-context.stroke();
+ctx.beginPath();
+ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+ctx.fillStyle = 'green';
+ctx.fill();
+ctx.lineWidth = 5;
+ctx.strokeStyle = '#003300';
+ctx.stroke();
 
 if(process.title == 'browser') {
   document.body.appendChild(canvas)
