@@ -1,7 +1,7 @@
 {
   "name": "create-canvas",
   "description": "wrap canvas module so the same code works in node or browser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/willhoag/create-canvas",
   "repository": {
     "type": "git",
@@ -17,7 +17,6 @@
     "url": "https://github.com/willhoag/create-canvas"
   },
   "license": "MIT",
-  "readme": "# create-canvas\n\nwrap canvas so you can load it the same in node or the client!\n\n## Example\n\ndraw a green circle in both the browser or node.\n\n``` js\n//example.js\nvar Canvas = require('./')\n\nvar dia = 200\nvar canvas = new Canvas(dia, dia)\nvar ctx = canvas.getContext('2d')\n\nvar context = canvas.getContext('2d');\nvar centerX = canvas.width / 2;\nvar centerY = canvas.height / 2;\nvar radius = (dia - 5)/2;\n\ncontext.beginPath();\ncontext.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);\ncontext.fillStyle = 'green';\ncontext.fill();\ncontext.lineWidth = 5;\ncontext.strokeStyle = '#003300';\ncontext.stroke();\n\nif(process.title == 'browser') {\n  document.body.appendChild(canvas)\n} else {\n  canvas.pngStream().pipe(process.stdout)\n}\n```\n\nrun it in node...\n```\nnode example.js > circle.png\n```\n\nbundle and run in the browser\n```\nbrowserify example | indexhtmlify > index.html\nopen index.html\n```\n\n## License\n\nMIT\n",
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/willhoag/create-canvas/issues"
