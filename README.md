@@ -1,4 +1,4 @@
-# canvas-browserify
+# create-canvas
 
 wrap canvas so you can load it the same in node or the client!
 
