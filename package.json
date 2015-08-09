@@ -2,33 +2,40 @@
   "name": "create-canvas",
   "description": "wrap canvas module so the same code works in node or browser",
   "version": "1.0.1",
-  "homepage": "https://github.com/willhoag/create-canvas",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/willhoag/create-canvas.git"
-  },
-  "optionalDependencies": {
-    "canvas": "^1.2.7"
-  },
-  "browser": "browser.js",
   "author": {
     "name": "Will Hoag",
     "email": "dev@willhoag.com",
     "url": "https://github.com/willhoag/create-canvas"
   },
-  "license": "MIT",
-  "readmeFilename": "README.md",
+  "browser": "browser.js",
   "bugs": {
     "url": "https://github.com/willhoag/create-canvas/issues"
   },
   "dependencies": {
     "canvas": "1"
   },
+  "directories": {},
+  "homepage": "https://github.com/willhoag/create-canvas",
+  "keywords": [
+    "browser",
+    "canvas",
+    "consistant",
+    "create",
+    "node"
+  ],
+  "license": "MIT",
+  "main": "index.js",
   "maintainers": [
     {
       "name": "devhoag",
       "email": "dev@willhoag.com"
     }
   ],
-  "directories": {}
+  "optionalDependencies": {
+    "canvas": "^1.2.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/willhoag/create-canvas.git"
+  }
 }
