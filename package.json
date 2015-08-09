@@ -1,7 +1,7 @@
 {
   "name": "create-canvas",
   "description": "wrap canvas module so the same code works in node or browser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": {
     "name": "Will Hoag",
     "email": "dev@willhoag.com",
