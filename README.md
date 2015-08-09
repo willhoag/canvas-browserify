@@ -4,7 +4,7 @@ wrap canvas so you can load it the same in node or the client!
 
 ## Note
 
-this is a fork of [dominictarr/canvas-browserify](git://github.com/dominictarr/canvas-browserify.git) which makes the api a function call instead of a class instantiation, getting rid of the return override of the constructor which fails in phantomjs and maybe elsewhere
+this is a fork of [dominictarr/canvas-browserify](https://github.com/dominictarr/canvas-browserify) which makes the api a function call instead of a class instantiation, getting rid of the return override of the constructor which fails in phantomjs and maybe elsewhere
 
 ## Example
 
